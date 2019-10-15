@@ -1,4 +1,6 @@
 # CreateBaseControlView
+
+ 链式编程创建基本控件 
  Create a base Control View  using chain programming
  
      //创建lable
@@ -18,11 +20,11 @@
  
     
     //创建uiimageView 可以点击
-      UIImageView *imageView = [UIImageView new];
-      imageView.yl_frame(CGRectMake(20, 260, 60, 60)).
+     UIImageView *imageView = [UIImageView new];
+     imageView.yl_frame(CGRectMake(20, 260, 60, 60)).
        yl_bgColor([UIColor redColor]).yl_cornerRadius(5).yl_contentModel(UIViewContentModeScaleAspectFit).yl_targetAction(self,@selector(clickImage:)).
        yl_image([UIImage imageNamed:@"NoLogistics"]);
-       [self.view addSubview:imageView];
+      [self.view addSubview:imageView];
     
     //创建view
     UIView *view = [UIView new];
@@ -39,7 +41,7 @@
     
       //常见textView 监听需要遵守代理
       UITextView *textView = [UITextView new];
-       textView.yl_frame(CGRectMake(20, 80, 300, 160)).yl_text(@"nihao").yl_delegate(self).yl_bgColor([UIColor  yellowColor]).yl_radiusColor([UIColor grayColor]).yl_cornerRadius(5).yl_cornerRadiusWidth(2).yl_font(18).yl_textColor([UIColor redColor]);
+      textView.yl_frame(CGRectMake(20, 80, 300, 160)).yl_text(@"nihao").yl_delegate(self).yl_bgColor([UIColor  yellowColor]).yl_radiusColor([UIColor grayColor]).yl_cornerRadius(5).yl_cornerRadiusWidth(2).yl_font(18).yl_textColor([UIColor redColor]);
       [self.view addSubview:textView];
     
     
