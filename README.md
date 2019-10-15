@@ -2,9 +2,10 @@
  Create a base Control View  using chain programming
  
  //创建lable
- UILabel *label = [UILabel new];
- label.yl_frame(CGRectMake(20, 100, 100, 50)).yl_rgbBackgroundColor(0,0,0).yl_alpha(0.5).yl_textString(@"你好天安门").yl_textColor([UIColor redColor]).yl_font(30).yl_alignment(NSTextAlignmentCenter).yl_cornerRadius(5).yl_lineBreakModel(NSLineBreakByTruncatingMiddle).yl_radiusColor([UIColor purpleColor]).yl_radiusWidth(0.5);
-[self.view addSubview:label];
+    UILabel *label = [UILabel new];
+    label.yl_frame(CGRectMake(20, 100, 100, 50)).yl_rgbBackgroundColor(0,0,0).yl_alpha(0.5).yl_textString(@"你好天安门").
+    yl_textColor([UIColo redColor]).yl_font(30).yl_alignment(NSTextAlignmentCenter).yl_cornerRadius(5).yl_lineBreakModel(NSLineBreakByTruncatingMiddle).yl_radiusColor([UIColor purpleColor]).yl_radiusWidth(0.5);
+    [self.view addSubview:label];
     
     
     
@@ -14,11 +15,14 @@ button.yl_frame(CGRectMake(20, 200, 300, 40)).yl_text(@"你好中国").yl_textCo
 [self.view addSubview:button];
     
     
-  //创建uiimageView 可以点击
-  UIImageView *imageView = [UIImageView new];
-  imageView.yl_frame(CGRectMake(20, 260, 60, 60)).yl_bgColor([UIColor     redColor]).yl_cornerRadius(5).yl_contentModel(UIViewContentModeScaleAspectFit).yl_targetAction(self,@selector(clickImage:)).yl _image([UIImage imageNamed:@"NoLogistics"]);
-    [self.view addSubview:imageView];
+ 
     
+    //创建uiimageView 可以点击
+  UIImageView *imageView = [UIImageView new];
+  imageView.yl_frame(CGRectMake(20, 260, 60, 60)).
+  yl_bgColor([UIColor redColor]).yl_cornerRadius(5).yl_contentModel(UIViewContentModeScaleAspectFit).yl_targetAction(self,@selector(clickImage:)).
+  yl_image([UIImage imageNamed:@"NoLogistics"]);
+    [self.view addSubview:imageView];
     
     //创建view
     UIView *view = [UIView new];
@@ -35,7 +39,7 @@ button.yl_frame(CGRectMake(20, 200, 300, 40)).yl_text(@"你好中国").yl_textCo
     
    //常见textView 监听需要遵守代理
    UITextView *textView = [UITextView new];
-   textView.yl_frame(CGRectMake(20, 80, 300, 160)).yl_text(@"nihao").yl_delegate(self).yl_bgColor([UIColor yellowColor]).yl_radiusColor([UIColor grayColor]).yl_cornerRadius(5).yl_cornerRadiusWidth(2).yl_font(18).yl_textColor([UIColor redColor]);
+   textView.yl_frame(CGRectMake(20, 80, 300, 160)).yl_text(@"nihao").yl_delegate(self).yl_bgColor([UIColor  yellowColor]).yl_radiusColor([UIColor grayColor]).yl_cornerRadius(5).yl_cornerRadiusWidth(2).yl_font(18).yl_textColor([UIColor redColor]);
     [self.view addSubview:textView];
     
     
